@@ -1,0 +1,52 @@
+ÉLEVAGE POULETS – FABRIQUER L'APK ANDROID AVEC GITHUB (gratuit)
+================================================================
+
+GitHub compile l'application pour vous sur ses serveurs (environ 5 minutes).
+Vous n'avez rien à installer sur le Mac.
+
+A) CRÉER LE DÉPÔT (une seule fois)
+   1. Créez un compte gratuit sur https://github.com/signup
+   2. En haut à droite : « + » > « New repository »
+      - Repository name : elevage-poulets
+      - Cochez « Public » (les Actions sont gratuites et illimitées)
+      - Cochez « Add a README file »
+      - Cliquez « Create repository »
+
+B) ENVOYER LES FICHIERS
+   1. Dans le dépôt : « Add file » > « Upload files »
+   2. Ouvrez le dossier « poulets-apk » sur le Mac, sélectionnez TOUT
+      (Cmd + A) et glissez dans la page :
+        www, android-icones, package.json, capacitor.config.json,
+        debug.keystore, COPIER-DANS-GITHUB-apk.yml, LISEZMOI.txt
+   3. En bas : « Commit changes »
+
+C) CRÉER LE FICHIER DE COMPILATION
+   (le dossier .github est caché sur Mac, on le crée donc dans GitHub)
+   1. « Add file » > « Create new file »
+   2. Nom du fichier, tapez exactement :  .github/workflows/apk.yml
+   3. Ouvrez COPIER-DANS-GITHUB-apk.yml sur le Mac (TextEdit),
+      copiez TOUT le contenu et collez-le dans GitHub.
+   4. « Commit changes »  → la compilation démarre toute seule.
+
+D) RÉCUPÉRER L'APK
+   1. Onglet « Actions » : attendez la coche verte ✅ (environ 5 min).
+      (Croix rouge ❌ ? Cliquez dessus et envoyez une capture à Claude.)
+   2. Sur le TÉLÉPHONE, ouvrez :
+        https://github.com/VOTRE-NOM/elevage-poulets/releases
+      et touchez « elevage-poulets.apk » pour le télécharger.
+   3. Ouvrez le fichier téléchargé > Android demande d'autoriser
+      « Installer des applis inconnues » pour Chrome > Autoriser > Installer.
+   4. Si « Play Protect » s'affiche : « Plus de détails » > « Installer quand même ».
+      (Normal : l'application ne vient pas du Play Store.)
+
+E) VOS DONNÉES
+   - Elles sont uniquement dans le téléphone.
+   - Onglet « Sauvegarde » > « Sauvegarder / partager » : envoyez le fichier
+     sur WhatsApp ou par e-mail chaque semaine.
+   - NE DÉSINSTALLEZ PAS l'application sans avoir fait une sauvegarde.
+
+F) METTRE À JOUR L'APPLICATION PLUS TARD
+   - Remplacez les fichiers dans « www » sur GitHub (Upload files).
+   - Une nouvelle APK est fabriquée automatiquement dans « Releases ».
+   - Installez-la par-dessus l'ancienne : les données sont conservées
+     (grâce au fichier debug.keystore, ne le supprimez pas).

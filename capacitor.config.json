@@ -1,0 +1,9 @@
+{
+  "appId": "sn.elevage.poulets",
+  "appName": "Élevage Poulets",
+  "webDir": "www",
+  "android": { "backgroundColor": "#7a4b1e" },
+  "plugins": {
+    "SystemBars": { "insetsHandling": "css", "style": "DARK", "initialViewportFitValueHint": "cover" }
+  }
+}
