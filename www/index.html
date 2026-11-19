@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7a4b1e">
+  <title>Élevage Poulets</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button id="btn-back" class="icon-btn" aria-label="Retour" hidden>‹</button>
+    <h1 id="title">🐔 Élevage Poulets</h1>
+    <span id="offline" class="pill" hidden>hors ligne</span>
+  </header>
+  <main id="app"></main>
+  <nav class="bottomnav">
+    <a href="#/" data-nav="home">🏠<span>Lots</span></a>
+    <a href="#/lot/new" data-nav="new">➕<span>Nouveau lot</span></a>
+    <a href="#/backup" data-nav="backup">💾<span>Sauvegarde</span></a>
+  </nav>
+  <div id="toast" class="toast" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
